@@ -1,0 +1,547 @@
+* {
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+header {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+}
+
+header a img {
+  height: 10vh;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  padding: 0 10vw;
+  padding-bottom: 2em;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  margin-top: 5vh;
+}
+
+.half-l {
+  width: 25vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.half-r {
+  width: 25vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#i-con {
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, 50%);
+}
+
+.half-l li,
+.half-r li {
+  margin-right: 3vw;
+  padding: 1em;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transform: translate(0, 50%);
+}
+
+nav ul li:hover {
+  background-color: rgb(126, 126, 126);
+  color: white;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.add_box {
+  height: 80vh;
+  padding: 5vh 9.8vw;
+  display: flex;
+  justify-content: center;
+}
+
+.left_half {
+  width: 50%;
+  height: 100%;
+}
+
+.left_half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right_half {
+  width: 50%;
+  padding: 5.5vw;
+  background-color: #fbf7f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.right_text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.right_text span {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.right_text p {
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: 1.2em;
+}
+
+.neat {
+  background: none;
+  border: 1px solid black;
+  padding: 1.5em 5.5em;
+  letter-spacing: 0.2em;
+}
+
+.neat span {
+  font-size: 0.8em;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.neat:hover {
+  background-color: #414141;
+  color: white;
+
+  cursor: pointer;
+}
+
+.add_container:nth-child(2) .right_half {
+  background-color: #f3ede9;
+}
+
+.add_container:nth-child(4) .right_half {
+  background-color: #dee9e9;
+}
+
+.manicure {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.manicure div {
+  background: none;
+  border: 1px solid black;
+  padding: 2.2em 0;
+  padding-left: 2em;
+  padding-right: 8em;
+  font-weight: 300;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.manicure div:last-child {
+  border-left: none;
+  padding: 2.1em;
+}
+
+.manicure:hover {
+  background-color: #414141;
+  color: white;
+
+  cursor: pointer;
+}
+
+.shop_container {
+  padding: 5vh 9.8vw;
+}
+
+.section_category {
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
+.section_title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.product_box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product {
+  width: 100%;
+  height: 100%;
+}
+
+.p_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p_image img:hover {
+  background-color: white;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.p_info {
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p_text {
+  font-weight: 300;
+}
+
+.p_category {
+  font-size: 0.7em;
+
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+.p_category:first-child {
+  display: inline-block;
+}
+
+.new {
+  display: inline-block;
+  margin-left: 0.3em;
+}
+
+.new span {
+  margin-left: 0.2em;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+}
+
+.new span:first-child {
+  color: rgba(128, 128, 128, 0.61);
+}
+
+.new span:last-child {
+  color: rgb(194, 140, 41);
+}
+
+.p_title {
+  font-size: 2em;
+}
+
+.p_price {
+  font-size: 0.7em;
+  font-weight: 300;
+  color: rgb(126, 126, 126);
+
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+.p_price:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.looks {
+  height: 80vh;
+  padding: 5vh 9.8vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.looks_product {
+  display: flex;
+  justify-content: center;
+}
+
+.looks_linkbox {
+  width: 40vw;
+  margin-bottom: 10vh;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  place-content: center;
+  place-items: center center;
+}
+
+.looks_link {
+  border-right: 1px solid #41414181;
+}
+
+.looks_link:last-child {
+  border-right: none;
+}
+
+.looks_link a {
+  text-decoration: none;
+  color: #41414177;
+  font-size: 0.8em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.looks_link a img {
+  width: 70%;
+  object-fit: cover;
+
+  margin-bottom: 1em;
+}
+
+.looks_link a img:hover {
+  background-color: white;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.journal_grid {
+  padding: 5vh 9.8vw;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  cursor: pointer;
+}
+
+.j_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.j_card {
+  background-color: #f3ede9;
+  padding: 5.5vw;
+  text-align: center;
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.j_card p {
+  font-size: 2.2em;
+  margin-bottom: 5vh;
+}
+
+.j_button {
+  padding: 1em;
+  padding-top: 0.5em;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.j_button:hover {
+  background-color: rgb(126, 126, 126);
+  color: white;
+}
+
+.j_button input {
+  background: none;
+  border: none;
+
+  font-size: 2.5em;
+  transform: translate(0, 15%);
+}
+
+.email_enroll {
+  padding: 5vh 28vw;
+}
+
+.email_enroll .section_title {
+  margin-top: 5vh;
+}
+
+.email_box {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email_box input {
+  border: none;
+  font-size: 2.3em;
+  margin-bottom: 0.5em;
+}
+
+.email_box input:focus {
+  outline: none;
+}
+
+.email_box input::placeholder {
+  color: rgba(126, 126, 126, 0.445);
+}
+
+.email_box button {
+  background: none;
+  border: 1px solid black;
+  padding: 1em;
+  padding-left: 1.2em;
+  padding-bottom: 0.7em;
+  font-weight: 300;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 2em;
+}
+
+.email_box button:hover {
+  background-color: rgb(126, 126, 126);
+  border-color: rgb(126, 126, 126);
+  color: white;
+}
+
+.email_box button span {
+  font-size: 2em;
+}
+
+.photo_box {
+  padding: 5vh 9.8vw;
+}
+
+.photo_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(261px, 1fr));
+  grid-auto-rows: minmax(261px, 1fr);
+  place-items: center center;
+}
+
+.insta_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.insta_image img:hover {
+  background-color: white;
+  opacity: 50%;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.follow {
+  padding-top: 5vh;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.follow a {
+  color: rgb(126, 126, 126);
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  height: 35vh;
+}
+
+.footer {
+  height: 100%;
+  background-color: #f3ede9;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer_col {
+  width: 30%;
+  height: 50%;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer_col:last-child {
+  border: none;
+}
+
+.col_title {
+  color: #9d9d9c;
+}
+
+.col_ul {
+  height: 60%;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col_ul li:hover {
+  cursor: pointer;
+}
