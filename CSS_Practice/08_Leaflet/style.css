@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.leaflet {
+  height: 100%;
+  display: grid;
+  /* row설정 없이 grid-template-columns: 1.6fr 60px 1fr; */
+  grid-template: 1fr / 55% 5% 40%;
+}
+
+/* ##section -- list## */
+
+.list {
+  background-color: #fd7401;
+  /* padding 값주기 */
+}
+
+/* 필요 x */
+.space {
+  border: 1px solid red;
+  margin: 10px;
+}
+
+.event {
+  display: grid;
+  /* 50px 5fr 1.5fr */
+  grid-template-columns: 3vw 3fr 1.2fr;
+  /* 밑으로 세개 필요 x */
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: repeat(2, 1fr);
+  gap: 2px;
+
+  background-color: #fd0400;
+  /* 2px */
+  border: 1px solid #fd0400;
+  color: #fd0400;
+  font-weight: 600;
+}
+
+.event:hover {
+  color: white;
+  background-color: white;
+  border: 3px solid white;
+}
+
+.themes {
+  /* 필요 x */
+  grid-row: span 2;
+
+  width: 100%;
+  padding: 1em;
+  background-color: #fd7401;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  /* 필요 x */
+  grid-row: span 2;
+
+  background-color: #fd7401;
+  padding: 0.14em;
+  padding-left: 0.2em;
+  font-size: 6em;
+  font-weight: 500;
+
+  /* padding 값으로 조정하기 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* grid 걸기 */
+.more {
+  background-color: #fd7401;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more span {
+  padding: 1vh;
+}
+
+/* flex 걸기 */
+.more button {
+  background: none;
+  background-color: #fd0400;
+  padding: 1.2vh 3.2vw;
+  border: 1px solid #fd0400;
+  border-radius: 10% / 50%;
+  font-size: 0.8em;
+  color: #fd7401;
+}
+/* 
+이렇게 호버 효과 추가
+.event:hover .more button {
+  border: 1px solid white;
+  background-color: white;
+} */
+
+/* ##section -- line## */
+
+.line {
+  /* display: flex column으로 조정하기 */
+  /* flower를 위해 position relative 걸기 */
+  /* white-space: nowrap; 으로 공백을 한줄로 표현하기 */
+  font-weight: 500;
+}
+
+.line > .top {
+  /* 필요 x */
+  width: 100%;
+  height: 50%;
+  padding-top: 2vh;
+  background-color: #fd00ff;
+  writing-mode: vertical-lr;
+  font-size: 2em;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.line > .bottom {
+  width: 100%;
+  height: 50%;
+  padding-top: 2vh;
+  background-color: #1a00ff;
+  writing-mode: vertical-lr;
+  font-size: 2em;
+  transform: rotate(180deg);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.line > img {
+  /* 필요 x */
+  float: left;
+
+  /* display: flex, poistion: absolute 등 height, width 걸기 */
+}
+
+/* ##section -- catalog## */
+
+.catalog {
+  background-color: #fd0400;
+  padding: 15px;
+}
+
+.header {
+  height: 2em;
+  margin-bottom: 2em;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .section {
+  height: 100%;
+  font-size: 2em;
+}
+
+.header .section input {
+  width: 1.8em;
+  height: 1.8em;
+  background: none;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.header .section input:hover {
+  background-color: black;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* row 걸필요 없음 */
+  grid-template-rows: repeat(3, 150px);
+  grid-auto-rows: 150px;
+  gap: 15px;
+}
+
+.post {
+  border-top: 3px solid black;
+}
+
+.post h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.post p {
+  margin-top: 0em;
+}

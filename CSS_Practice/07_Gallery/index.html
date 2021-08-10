@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <!-- 전체를 div로 묶을 필요 없었음 -->
+    <div id="grid">
+      <!-- header가 아닌 nav 태그를 사용해야해! -->
+      <header>
+        <select name="year" id="">
+          <option value="year-all">Year: All</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+        </select>
+        <select name="program" id="">
+          <option value="program-all">Programme: All</option>
+          <option value="pfa">PGDIPFA</option>
+          <option value="bfa">BFA(HONS)</option>
+          <option value="mfa">MFA</option>
+        </select>
+        <select name="themes" id="">
+          <option value="themes-all">Themes: All</option>
+          <option value="r">Renaissance</option>
+          <option value="c">Classicism</option>
+          <option value="i">impressionism</option>
+          <option value="s">surrealism</option>
+        </select>
+        <select name="practice" id="">
+          <option value="practice-all">Practice: All</option>
+          <option value="f">figure</option>
+          <option value="l">landscape</option>
+          <option value="p">portrait</option>
+          <option value="a">abstract</option>
+        </select>
+        <select name="student" id="">
+          <option value="students-all">Students</option>
+          <option value="1">Kate Bedford</option>
+          <option value="2">Particia Ramos</option>
+          <option value="3">Trevor Newman</option>
+          <option value="4">Kristina Leggett</option>
+          <option value="5">JoAnne Rail</option>
+          <option value="6">Emma Chalmers</option>
+          <option value="7">Wendelien Bakker</option>
+          <option value="8">Mariadelle Gamit</option>
+          <option value="9">Tullia Pye</option>
+        </select>
+      </header>
+      <main>
+        <div class="pieces-container">
+          <div class="top-bottom">
+            <span class="name">Kate Bedfold</span>
+            <span class="number">PGDIPFA</span>
+          </div>
+          <!-- div로 감쌀 필요가 없었다 -->
+          <div class="center">
+            <img src="img/01.jpg" alt="" class="pieces" />
+          </div>
+          <div class="top-bottom">
+            <span class="year">2016</span>
+            <a href="">Read more</a>
+          </div>
+        </div>
+        <div class="pieces-container">
+          <div class="top-bottom">
+            <span class="name">Particia Ramos</span>
+            <span class="number">BFA(HONS)</span>
+          </div>
+          <div class="center">
+            <img src="img/02.jpg" alt="" class="pieces" />
+          </div>
+          <div class="top-bottom">
+            <span class="year">2016</span>
+            <a href="">Read more</a>
+          </div>
+        </div>
+        <div class="pieces-container">
+          <div class="top-bottom">
+            <span class="name">Trevor Newman</span>
+            <span class="number">MFA</span>
+          </div>
+          <div class="center">
+            <img src="img/03.jpg" alt="" class="pieces" />
+          </div>
+          <div class="top-bottom">
+            <span class="year">2016</span>
+            <a href="">Read more</a>
+          </div>
+        </div>
+        <div class="pieces-container">
+          <div class="top-bottom">
+            <span class="name">Kristina Leggett</span>
+            <span class="number">BFA(HONS)</span>
+          </div>
+          <div class="center">
+            <img src="img/04.jpg" alt="" class="pieces" />
+          </div>
+          <div class="top-bottom">
+            <span class="year">2016</span>
+            <a href="">Read more</a>
+          </div>
+        </div>
+        <div class="pieces-container">
+          <div class="top-bottom">
+            <span class="name">JoAnne Rail</span>
+            <span class="number">PGDIPFA</span>
+          </div>
+          <div class="center">
+            <img src="img/05.jpg" alt="" class="pieces" />
+          </div>
+          <div class="top-bottom">
+            <span class="year">2016</span>
+            <a href="">Read more</a>
+          </div>
+        </div>
+        <div class="pieces-container">
+          <div class="top-bottom">
+            <span class="name">Emma Chalmers</span>
+            <span class="number">MFA</span>
+          </div>
+          <div class="center">
+            <img src="img/06.jpg" alt="" class="pieces" />
+          </div>
+          <div class="top-bottom">
+            <span class="year">2016</span>
+            <a href="">Read more</a>
+          </div>
+        </div>
+        <div class="pieces-container">
+          <div class="top-bottom">
+            <span class="name">Wendelien Bakker</span>
+            <span class="number">MFA</span>
+          </div>
+          <div class="center">
+            <img src="img/07.jpg" alt="" class="pieces" />
+          </div>
+          <div class="top-bottom">
+            <span class="year">2016</span>
+            <a href="">Read more</a>
+          </div>
+        </div>
+        <div class="pieces-container">
+          <div class="top-bottom">
+            <span class="name">Mariadelle Gamit</span>
+            <span class="number">BFA(HONS)</span>
+          </div>
+          <div class="center">
+            <img src="img/08.jpg" alt="" class="pieces" />
+          </div>
+          <div class="top-bottom">
+            <span class="year">2016</span>
+            <a href="">Read more</a>
+          </div>
+        </div>
+        <div class="pieces-container">
+          <div class="top-bottom">
+            <span class="name">Tullia Pye</span>
+            <span class="number">MFA</span>
+          </div>
+          <div class="center">
+            <img src="img/09.jpg" alt="" class="pieces" />
+          </div>
+          <div class="top-bottom">
+            <span class="year">2016</span>
+            <a href="">Read more</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

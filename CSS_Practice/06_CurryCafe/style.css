@@ -1,0 +1,230 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #eeea44;
+  color: #fd6c2d;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  grid-template-rows: 40px 1fr 1fr 40px;
+  box-sizing: border-box;
+  /* 전체 글짜를 기울이기 */
+  font-style: oblique;
+}
+
+/* 위 아래 설정 */
+
+header {
+  grid-column: span 3;
+  grid-row: 1;
+  border: 5px solid #fd6c2d;
+  background-color: white;
+  box-sizing: border-box;
+  font-size: 1.3em;
+  font-weight: 500;
+  /* 글씨 세로로 가운데 정렬 */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  /* 텍스트가 넘기면 숨기기 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+footer {
+  grid-column: span 3;
+  grid-row: -2;
+  border: 5px solid #fd6c2d;
+  background-color: white;
+  box-sizing: border-box;
+  font-size: 1.3em;
+  font-weight: 500;
+  /* 글씨 세로로 가운데 정렬 */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  /* 텍스트가 넘기면 숨기기 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 왼쪽 라인 설정 */
+
+#left {
+  grid-column: 1;
+  grid-row: span 2;
+}
+
+#left div {
+  box-sizing: border-box;
+  background-color: #fd6c2d;
+  border: 5px solid #fd6c2d;
+  border-top: none;
+  font-size: 1.5vh;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#left div:first-child {
+  width: 100%;
+  height: 55%;
+  color: white;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+}
+
+#left div:first-child:hover {
+  opacity: 90%;
+  background-color: #e65e24fb;
+}
+
+#left div:nth-child(2) {
+  height: 35%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#left div:nth-child(2):hover {
+  background-color: rgb(0, 0, 0, 50%);
+}
+
+#left div:nth-child(2) p {
+  display: inline-block;
+  font-size: 2vh;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+#left div:last-child {
+  height: 10%;
+  border-bottom: none;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#left div:last-child img {
+  object-fit: contain;
+  width: 70%;
+  height: 50%;
+}
+
+/* 오른쪽 라인 설정 */
+
+#right {
+  grid-column: -2;
+  grid-row: span 2;
+}
+
+#right div {
+  height: 50%;
+  border: 5px solid #fd6c2d;
+  border-top: none;
+  background-color: #40ac49;
+  color: white;
+  font-size: 1.5vh;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+#right div:first-child:hover {
+  opacity: 90%;
+  background-color: #22972c;
+}
+
+#right div:last-child:hover {
+  opacity: 90%;
+  background-color: #22972c;
+}
+
+#right div p {
+  display: inline-block;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+#right div img {
+  object-fit: contain;
+  width: 40px;
+}
+
+/* 가운데 배경 및 글자 설정 */
+
+main {
+  grid-row: span 2;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1517330357046-3ab5a5dd42a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGluZGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60),
+    url(https://images.unsplash.com/photo-1581600140682-d4e68c8cde32?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGluZGlhbiUyMGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-position: left, right;
+  background-size: 50%, 50%;
+  background-repeat: no-repeat;
+}
+
+#text {
+  height: 100%;
+  color: white;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#text h2 {
+  margin: 0 auto;
+  font-size: 6em;
+}
+
+#text h1 {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.9em;
+  font-size: 9em;
+  font-weight: 900;
+  width: 50%;
+}
+
+#talk {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: #fd6c2d;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 4px rgb(0, 0, 0, 16%);
+}
+
+#talk:hover {
+  opacity: 90%;
+  cursor: pointer;
+}
+
+#talk img {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}

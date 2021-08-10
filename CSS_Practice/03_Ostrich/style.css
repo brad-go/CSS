@@ -1,0 +1,62 @@
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  color: white;
+  font-size: 4em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 5.5em;
+}
+
+/* 4분면 클래스를 통일하고 display:flex를 준 후에 justify-content와 align-items로 글자 위치 조정하기 */
+.quadrant2 {
+  background-color: #d0e8de;
+  grid-column: span 2;
+  grid-row: span 2;
+  color: #f4460a;
+}
+.quadrant1 {
+  background-color: #0e8a69;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.quadrant3 {
+  background-color: #f4460a;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+/* 그리드 설정만 하기 */
+.quadrant4 {
+  grid-column: span 2;
+  grid-row: span 2;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(4, 2fr);
+  font-size: 0.5em;
+  line-height: 6em;
+}
+
+grid-row와 grid-column설정할 필요 없음 .quadrant4-2 {
+  background-color: #f8abc5;
+  grid-column: span 2;
+  grid-row: span 2;
+  color: #f4460a;
+}
+.quadrant4-1 {
+  background-color: #5f60a9;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.quadrant4-3 {
+  background-color: #fec127;
+  grid-column: span 2;
+  grid-row: span 2;
+  color: #f4460a;
+}
+.quadrant4-4 {
+  background-color: #f87474;
+  grid-column: span 2;
+  grid-row: span 2;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Paris</h1>
+      <h2>06.</h2>
+    </header>
+    <hr />
+    <!-- nav가 아닌 section을 썼어야 한다!! <section id="info" -->
+    <nav>
+      <div id="text-container">
+        <!-- flex-container로 묶기 위해 컨테이너용 div를 설정한 것은 좋다. 그러나 -->
+        <!-- div, span이 아니라 ul과 li를 사용했어야 한다ㅂ! -->
+        <div class="country">
+          <span>COUNTRY</span>
+          <span>FRANCE</span>
+          <span>POPULATION</span>
+          <span>2,249,976</span>
+          <span>COORDINATES</span>
+          <span>48°51'24"N</span>
+          <span>2°21'03"E</span>
+        </div>
+        <div class="colours">
+          <span>COLOURS</span>
+          <span><b>C</b>28 <b>M</b>0 <b>Y</b>0 <b>K</b>0</span>
+          <span><b>C</b>0 <b>M</b>0 <b>Y</b>0 <b>K</b>74</span>
+          <span><b>C</b>100 <b>M</b> <b>Y</b>84 <b>K</b></span>
+        </div>
+      </div>
+      <!-- div없이 span 태그만 있어도 충분했다 -->
+      <div class="url">
+        <span>WWW.NICKABARCLAYDESIGNS</span>
+      </div>
+    </nav>
+    <!-- 원들이 주요 포인트 인것은 맞지만, 필요한 중요 컨텐츠가 모두 담기지 않았으므로 -->
+    <!-- section id=circles를 사용하는 것이 더 좋았을 것 같다. -->
+    <main>
+      <div class="flex-container">
+          <!-- 모든 div들에게 클래스를 줄 필요 없었다 -->
+          <div class="blue-box"></div>
+          <div class="blue-box"></div>
+          <div class="blue-box"></div>
+          <div class="gray-box"></div>
+          <div class="gray-box"></div>
+          <div class="gray-box"></div>
+          <div class="green-box"></div>
+          <div class="green-box"></div>
+          <div class="green-box"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

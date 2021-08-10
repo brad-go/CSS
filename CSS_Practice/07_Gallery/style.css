@@ -1,0 +1,104 @@
+/* *로 전체 box-sizing: border box 주기 */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+/* -- header line --  */
+
+/* gap속성, border background-color: black을 사용해서 사이에 검은색 선 만들기 */
+header {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  /* row는 사용하지 않으니 필요없었다. */
+  grid-template-rows: 6vh;
+}
+
+/* 위에 선을 만들었으니 border 필요 없음 */
+select {
+  border: 3px solid black;
+  border-right: none;
+  padding: 0.2em 1.5em;
+  /* 화살표 이미지 삽입 */
+  background: url(img/arrow.jpeg) no-repeat 95% 50%;
+  /* 기본 화살표 없애기 */
+  appearance: none;
+}
+
+select:first-child {
+  border-left: none;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+/* -- main grid -- */
+
+main {
+  height: 100%;
+  box-sizing: border-box;
+  /* 겹치는 선을 안보이게 하기 */
+  margin-top: -3px;
+  display: grid;
+  /* auto-fite으로 고쳐보기 */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* repeat(3, 1fr)로 고쳐보기 */
+  grid-template-rows: minmax(300px, max-content);
+  /* 필요 x */
+  grid-auto-rows: minmax(300px, max-content);
+  /* gap, border 주기 */
+}
+
+/* border 필요 x */
+/* flex column으로 space-between 주기 */
+.pieces-container {
+  border-top: none;
+  /* 겹치는 선 안보이게 하기 */
+  margin: 0 -3px -3px 0;
+  border: 3px solid black;
+  border-collapse: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  justify-items: center;
+}
+
+.pieces-container:hover {
+  background-color: rgb(0, 0, 0, 16%);
+}
+
+/* width 필요x padding 값주기 */
+.top-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 필요 x */
+.top-bottom span {
+  padding: 0 2em;
+}
+
+/* 필요 x */
+.top-bottom a {
+  padding: 0 2em;
+}
+
+/* 필요 x */
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+/* margin 0 auto로 가운데 맞추기 */
+img {
+  object-fit: contain;
+  width: 60%;
+}
