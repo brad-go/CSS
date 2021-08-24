@@ -1,0 +1,101 @@
+// @import "_variables.scss";
+@import "_mixins.scss";
+// @import "_buttons";
+
+// #variable
+// body {
+//   background: $bg;
+// }
+
+// h1 {
+//   background: $bg;
+//   font-size: $title;
+// }
+
+// #nesting
+// h2 {
+//   color: $bg;
+// }
+
+// .box {
+//   margin-top: 20px;
+//   // .box:hover {} 와 같은 역할
+//   &:hover {
+//     background-color: yellowgreen;
+//   }
+//   // .box h2{}, .box button {} 과 같은 역할
+//   h2 {
+//     color: blue;
+//     &:hover {
+//       color: violet;
+//     }
+//   }
+//   button {
+//     color: red;
+//   }
+// }
+
+// #mixins
+// h1 {
+//   @include sexyTitle();
+// }
+
+// mixin을 통해 a태그 색깔 바꾸기
+// a {
+//   margin-bottom: 10px;
+//   &:nth-child(odd) {
+//     @include link(yellow);
+//   }
+//   &:nth-child(even) {
+//     @include link(blue);
+//   }
+// }
+
+// a {
+//   margin-bottom: 10px;
+//   &:nth-child(odd) {
+//     @include link("odd");
+//   }
+//   &:nth-child(even) {
+//     @include link("even");
+//   }
+// }
+
+// extends를 통해 두 태그를 같게 만들기
+// html 파일.
+// <a href="#">Log In</a>
+// <button>Log Out</button>
+
+// a {
+//   @extend %button;
+//   text-decoration: none;
+// }
+
+// button {
+//   @extend %button;
+//   border: none;
+// }
+
+// mixins repsonsive
+// a {
+//   // mixin의 @content가 된다.
+//   @include responsive($device) {
+//     text-decoration: none;
+//   }
+// }
+
+h1 {
+  color: red;
+  @include responsive("iphone") {
+    color: yellow;
+  }
+  @include responsive("iphone-l") {
+    font-size: 120px;
+  }
+  @include responsive("tablet") {
+    color: green;
+  }
+  // @include responsive("ipad-l") {
+  //   font-size:
+  // }
+}
