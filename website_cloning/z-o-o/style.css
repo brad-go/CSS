@@ -41,6 +41,7 @@ li {
 }
 
 .main-nav {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 6fr;
 }
@@ -71,6 +72,29 @@ li {
 
 .nav-li:first-child:hover ~ .nav-li:nth-child(2) {
   color: black;
+}
+
+button {
+  position: absolute;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 50px;
+  transform: translate(0, -4px);
+  transition: 0.2s ease-in-out;
+  z-index: 2;
+}
+
+button:hover {
+  transform: rotate(90deg) translate(-4px);
+}
+
+.active {
+  position: fixed;
+  width: 66.7%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* main */
@@ -104,4 +128,10 @@ img {
 .post-text span {
   padding-left: 10px;
   padding-bottom: 5px;
+}
+
+/* js */
+
+.hidden {
+  display: none;
 }
