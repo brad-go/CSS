@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 50px;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul:hover {
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+li {
+  padding: 0 50px 5px 20px;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.main-nav:hover > .nav-li:nth-child(2) {
+  color: white;
+}
+
+.side-nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.nav-li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-li:first-child:hover {
+  color: white;
+}
+
+.nav-li:nth-child(2) {
+  color: gainsboro;
+}
+
+.nav-li:first-child:hover ~ .nav-li:nth-child(2) {
+  color: black;
+}
+
+/* main */
+
+.post-box {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 45vh;
+}
+
+.post-image {
+  width: 100%;
+  height: 90%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-text {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-text span {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
