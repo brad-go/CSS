@@ -13,5 +13,6 @@ home.addEventListener("click", () => {
 nav.addEventListener("click", () => {
   secondNav.classList.toggle("hidden");
   button.classList.toggle("hidden");
-  nav.classList.toggle("active");
+  firstNav.classList.toggle("active");
 })
+

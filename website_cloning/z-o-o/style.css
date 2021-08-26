@@ -93,8 +93,10 @@ button:hover {
   position: fixed;
   width: 66.7%;
   height: 100vh;
+  background-color: gainsboro;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 /* main */
@@ -134,4 +136,17 @@ img {
 
 .hidden {
   display: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  width: 80%;
+  color: black;
+  font-size: 0.5em;
+  padding-right: 100px;
+  margin-top: 10px;
 }
