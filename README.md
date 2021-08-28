@@ -20,3 +20,4 @@ Create a website with CSS
 2. Paintbox: "https://brad-go.github.io/CSS/website_cloning/Paintbox/index.html"
 3. 10x19: "https://brad-go.github.io/CSS/website_cloning/10x19/index.html"
 4. z-o-o: "https://brad-go.github.io/CSS/website_cloning/z-o-o/index.html"
+5. Schwaltz Media: "https://brad-go.github.io/CSS/website_cloning/Schwaltz/index.html"
