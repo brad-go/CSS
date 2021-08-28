@@ -6,7 +6,7 @@
 
 > zoo: http://www.z-o-o.fr/en
 
-## Key of style
+## Important Points for making this site
 
 #### _**:hover**_
 

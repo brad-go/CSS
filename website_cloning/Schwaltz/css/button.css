@@ -1,0 +1,169 @@
+#wrapper {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 40px;
+  height: 43px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.active-button {
+  top: 0.8rem !important;
+}
+
+.init {
+  animation: none;
+}
+
+.line {
+  position: relative;
+  display: block;
+  background: rgb(78, 78, 78);
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 35px;
+  height: 2px;
+  border-radius: 1px;
+  box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* animation을 두 줄이상 작성하면 첫번째로 지정된 animation이 실행되고 그 다음 animation이 실행된다.  */
+.line-top {
+  animation: line-top 0.5s forwards ease-out,
+    line-top-rotate 0.3s 0.5s forwards ease-out;
+  background: white;
+}
+
+.top-reverse {
+  animation: line-top-rotate-reverse 0.3s forwards ease-out,
+    line-top-reverse 0.5s 0.3s forwards ease-out;
+}
+
+.line-mid {
+  animation: line-mid 0.5s forwards ease-out;
+  background: white;
+}
+
+.mid-reverse {
+  animation: line-mid-invisible 0.3s forwards ease-out,
+    line-mid-reverse 0.5s 0.3s forwards ease-out;
+}
+
+.line-bot {
+  animation: line-bot 0.5s forwards ease-out,
+    line-bot-rotate 0.3s 0.5s forwards ease-out;
+  background: white;
+}
+
+.bot-reverse {
+  animation: line-bot-rotate-reverse 0.3s forwards ease-out,
+    line-bot-reverse 0.5s 0.3s forwards ease-out;
+}
+
+@keyframes line-top {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+/* 클릭했을 때 다시 원래 상태로!  */
+@keyframes line-top-reverse {
+  0% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* 겹쳐지고 난 후에 회전 시키기 */
+/* rotate 사용시에는 translateY를 써주어야 .line이 있던 초기 위치에서 animation이 동작하는 것을 방지할 수 있다. */
+@keyframes line-top-rotate {
+  0% {
+    transform: translateY(8px) rotateZ(0deg);
+  }
+  100% {
+    transform: translateY(8px) rotateZ(45deg);
+  }
+}
+
+@keyframes line-top-rotate-reverse {
+  0% {
+    transform: translateY(8px) rotateZ(45deg);
+  }
+  100% {
+    transform: translateY(8px) rotateZ(0deg);
+  }
+}
+
+/* 중간 선을 사라지게 */
+@keyframes line-mid {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes line-mid-reverse {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes line-mid-invisible {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes line-bot {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes line-bot-reverse {
+  0% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* 겹쳐지고 난 후에 회전 시키기 */
+@keyframes line-bot-rotate {
+  0% {
+    transform: translateY(-8px) rotateZ(0deg);
+  }
+  100% {
+    transform: translateY(-8px) rotateZ(135deg);
+  }
+}
+
+@keyframes line-bot-rotate-reverse {
+  0% {
+    transform: translateY(-8px) rotateZ(135deg);
+  }
+  100% {
+    transform: translateY(-8px) rotateZ(0deg);
+  }
+}

@@ -1,0 +1,47 @@
+footer {
+  background-color: #464646;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+.footer-box {
+  width: 70rem;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-title {
+  margin-top: 0;
+  padding-bottom: 5rem;
+}
+
+.copyright {
+  height: 50%;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.copyright div {
+  margin-bottom: 1.5rem;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+}

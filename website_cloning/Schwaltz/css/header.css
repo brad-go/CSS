@@ -1,0 +1,36 @@
+header {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 9vh;
+  padding: 1rem 7rem;
+  font-size: 4rem;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+  transition: height 0.05s;
+  z-index: 1;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.scroll-title {
+  margin-left: 4.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header-scrolled {
+  height: 4rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1),
+    5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hidden {
+  display: none;
+}
