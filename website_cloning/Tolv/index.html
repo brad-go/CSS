@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Tolv</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <a id="title" href="">Tolv</a>
+      <nav>
+        <ul>
+          <li class="nav-li"><a href="">Products</a></li>
+          <li class="nav-li"><a href="">Stockists</a></li>
+          <li class="nav-li"><a href="">About us</a></li>
+        </ul>
+        <button id="search" class="search">
+          <img
+            src="https://www.toptal.com/designers/htmlarrows/assets/images/search-button-c0042ed6.svg"
+            alt=""
+          />
+        </button>
+      </nav>
+    </header>
+    <!-- modal -->
+    <section class="modal hidden">
+      <h4 class="modal-title">Search</h4>
+      <button class="modal-close">&#215;</button>
+      <div class="modal-inner">
+        <form id="search-form" action="https://tolv.dk/">
+          <input type="text" placeholder="Type anything" id="s" name="s" />
+          <button id="search" class="close">
+            <img
+              src="https://www.toptal.com/designers/htmlarrows/assets/images/search-button-c0042ed6.svg"
+              alt=""
+            />
+          </button>
+        </form>
+      </div>
+    </section>
+    <main>
+      <!-- slide image -->
+      <section class="slide-container">
+        <div class="slide-left">
+          <div class="slide-image"></div>
+          <div class="slide-image"></div>
+          <div class="slide-image"></div>
+          <div class="slide-image"></div>
+          <div class="slide-image"></div>
+        </div>
+        <div class="slide-right">
+          <div class="slide-text">
+            <h2>
+              Eyes rest from an afternoon in the sun. Smooth textures feel cool
+              on bare feet and skin.
+            </h2>
+            <h6>
+              Featuring <a href=""><strong>Kitsune sofa</strong></a
+              >, <a href="">armchair</a> and
+              <a href=""><strong>I-O coffee table (steel base)</strong></a>
+            </h6>
+          </div>
+          <div class="slide-text invisible">
+            <h2>
+              A sip of cocktail brings back memories of the beach.
+            </h2>
+            <h6>
+              Featuring <a href="">Portobello armchair and foot stool (wood base)</a>
+            </h6>
+          </div>
+          <div class="slide-text invisible">
+            <h2>
+              Sunset is a good time to gather. Evening light bathes the space in warm tones and colours.
+            </h2>
+            <h6>
+              Featuring <a href="">Copal sofa</a> and <a href="">Fromage poufs</a>
+            </h6>
+          </div>
+          <div class="slide-text invisible">
+            <h2>
+              The kitchen table is resplendent with local market treasures. Sit down together for a moment of escape.
+            </h2>
+            <h6>
+              Featuring <a href=""><strong>Figura chairs</strong></a
+              > and
+              <a href=""><strong>Itamae table</strong></a>
+            </h6>
+          </div>
+          <div class="slide-text invisible">
+            <h2>
+              Morning coffee with a tropical twist. Unusual tastes surprise the senses.
+            </h2>
+            <h6>
+              Featuring <a href="">Nuef daybed</a>
+            </h6>
+          </div>
+      </section>
+      <!-- text -->
+      <section class="text-container">
+        <h2>Time for Living</h2>
+        <h3>
+          Take time for life’s little moments. Browsing the news as you eat
+          breakfast. Setting the table for hungry guests. Sinking in to your
+          favourite armchair. At Tolv, your daily rituals are at the heart of
+          our design. We make furniture to give you your best day, every day.
+        </h3>
+        <h6>
+          Find out more <a class="orange" href=""><strong>About us</strong></a>
+        </h6>
+      </section>
+      <!-- grid image -->
+      <section class="grid-container">
+        <div class="grid-item col2">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/400*200"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Cherry</h4>
+            <p class="item-class">Sofa</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/200*200"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Figura</h4>
+            <p class="item-class">Dining Chair</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/200*201"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Inaly</h4>
+            <p class="item-class">Dining Chair</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/200*202"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Bourbon</h4>
+            <p class="item-class">Desk</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item col2">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/400*201"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Copal</h4>
+            <p class="item-class">Sofa</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/200*203"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Kistune</h4>
+            <p class="item-class">Armchair</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item col2">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/400*202"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Kile</h4>
+            <p class="item-class">Coffe Talbe</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/200*204"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Mooli</h4>
+            <p class="item-class">Coffe Talbe</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/200*205"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Com</h4>
+            <p class="item-class">Dining Chair</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item col2">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/400*203"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Portobello</h4>
+            <p class="item-class">Sofa (wood base)</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/200*206"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Papa</h4>
+            <p class="item-class">Scatter Cushion</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-item">
+          <img
+            class="grid-image"
+            src="https://source.unsplash.com/random/200*207"
+            alt=""
+          />
+          <div class="grid-text">
+            <h4 class="item-title">Nuef</h4>
+            <p class="item-class">Side Table</p>
+            <img
+              src="https://tolv.dk/wp-content/themes/tolv/assets/svgs/product-arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <section class="footer-main">
+          <div class="footer-col">
+            <ul class="footer-menu">
+              <li class="footer-item-title">Products:</li>
+              <li class="footer-item">
+                <a href="">Lounge Chairs</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Sofas</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Daybeds</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Poufs</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Dining Chairs</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Stools</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Tables & Desks</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Storage</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul class="footer-menu">
+              <li class="footer-item-title">Useful Information:</li>
+              <li class="footer-item">
+                <a href="">Our stockists</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Our designer</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Product care</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul class="footer-menu">
+              <li class="footer-item-title">Company:</li>
+              <li class="footer-item">
+                <a href="">News</a>
+              </li>
+              <li class="footer-item">
+                <a href="">About us</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul class="footer-menu">
+              <li class="footer-item-title">Connect with us:</li>
+              <li class="footer-item">
+                <a href="">Facebook</a>
+              </li>
+              <li class="footer-item">
+                <a href="">Instagram</a>
+              </li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-item-title">Access to:</li>
+              <li class="footer-item">
+                <a href="">Client login</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="copyright">
+          <span>All rights reserved Tolv &#169; 2021</span>
+          <div>
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-512.png" alt="">
+          </div>
+          
+        </section>
+      </div>
+    </footer>
+    <!-- <script src="js/header.js"></script> -->
+    <script src="js/search.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>

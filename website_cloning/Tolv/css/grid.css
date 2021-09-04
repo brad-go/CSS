@@ -1,0 +1,54 @@
+.grid-container {
+  margin-top: 2px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: 400px;
+  gap: 2px;
+}
+
+.grid-item {
+  position: relative;
+  /* blur효과가 요소 위로 번지는걸 방지하기 위해 */
+  overflow: hidden;
+}
+
+.col2 {
+  grid-column: span 2;
+}
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-image:hover {
+  animation: blur 0.2s forwards ease-in-out;
+}
+
+@keyframes blur {
+  from {
+    filter: blur(0);
+  }
+  to {
+    filter: blur(5rem);
+  }
+}
+
+.grid-text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px rgb(0, 0, 0, 0.01);
+}
+
+.item-title {
+  margin: 0;
+}
+
+.item-class {
+  margin: 5px 0 10px;
+}
