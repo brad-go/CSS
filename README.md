@@ -23,3 +23,4 @@ Create a website with CSS
 5. Schwaltz Media: "https://brad-go.github.io/CSS/website_cloning/Schwaltz/index.html"
 6. Tolv: "https://brad-go.github.io/CSS/website_cloning/Tolv/index.html"
 7. Rodic Davidson: "https://brad-go.github.io/CSS/website_cloning/RodicDavidson/index.html"
+8. BEIGE: "https://brad-go.github.io/CSS/website_cloning/Beige/index.html"
