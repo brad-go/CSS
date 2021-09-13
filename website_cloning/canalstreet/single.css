@@ -1,0 +1,62 @@
+.single-page {
+  position: fixed;
+  top: -100vh;
+  right: 0;
+  width: 60px;
+  height: 100vh;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.food {
+  margin-right: 120px;
+  background-color: #5da3ec;
+  z-index: 2;
+  animation: slidein 0.6s forwards 0.6s;
+}
+
+.retail {
+  margin-right: 60px;
+  background-color: #f64444;
+  z-index: 3;
+  animation: slidein 0.6s forwards 0.4s;
+}
+
+.commnuity {
+  background-color: #feb400;
+  z-index: 4;
+  animation: slidein 0.6s forwards 0.2s;
+}
+
+@keyframes slidein {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.single-page p {
+  margin: 0 auto;
+  padding: 100px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.food p {
+  font-size: 1.1rem;
+  padding-top: 98px;
+  padding-bottom: 101px;
+}
+
+.single-page span {
+  position: absolute;
+  writing-mode: vertical-lr;
+  font-family: "Space mono", monospace;
+  font-size: 1.2rem;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}

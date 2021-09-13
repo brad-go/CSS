@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Rampart+One&family=Space+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.page-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  opacity: 0;
+  animation: fade-in 1.5s forwards 1s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.home {
+  position: relative;
+  height: 100%;
+  margin-right: 180px;
+  overflow-x: hidden;
+}
+
+#logo {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-image: url("https://cdn2.iconfinder.com/data/icons/public-services/64/FREE_WIFI-ui-wifi_signal-signaling-sign-512.png");
+}
+
+.home-greet {
+  width: 100;
+  height: 100vh;
+  padding: 250px 60px 120px 60px;
+}
+
+.home-greet__title {
+  font-size: 75px;
+  font-weight: 500;
+  line-height: 86px;
+  max-width: 1030px;
+  margin: 0;
+}
+
+.home-img {
+  width: 100%;
+  height: 100vh;
+}
+
+.home-img img {
+  width: 100%;
+  height: 100%;
+  background: cover;
+}
+
+.home-markets {
+  padding: 60px;
+}
+
+.home-markets h2 {
+  margin: 5% 40% 6% 0;
+  font-size: 110px;
+  font-weight: 500;
+  line-height: 150px;
+}
+
+.markets {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+}
+
+.market__img-box {
+  height: 78%;
+}
+
+.market-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.market-text {
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
+  margin: 30px 0 0 0;
+}
+
+.home-events {
+  padding: 60px 60px 150px;
+}
+
+.home-events__header {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  justify-items: center;
+  align-items: center;
+}
+
+.home-events__header-item {
+  text-align: center;
+}
+
+.home-events__header-item h2 {
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.home-events__header-item p {
+  font-family: "Rampart One", cursive;
+  font-size: 4rem;
+}
+
+.home-events__row {
+  position: relative;
+  padding: 75px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  justify-items: center;
+  /* 배경 왼쪽 반은 검은색 오른쪽 반은 투명으로 만드는 linear-gradient */
+  /* 0deg일 경우 아래 반, 180은 위에 반, 270은 오른쪽 반을 차지하는 배경이된다. */
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0);
+  /* 각 배경들의 위치를 잡아준다 */
+  /* 맨 윗줄, 맨 아랫줄, 위에서 둘째 줄, 아래에서 둘째줄 */
+  background-position: 0 0, 0 100%, left 14px, 0 calc(100% - 14px);
+  /* 각 배경들에 repeat이 없다면 24px짜리 하나만 이 존재 */
+  background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+  /* 가로 길이 세로길이 */
+  background-size: 24px 1px;
+  animation: movingWalk 0.8s infinite normal;
+  animation-timing-function: linear;
+}
+
+@keyframes movingWalk {
+  0% {
+    background-position-x: 0, 0;
+  }
+  100% {
+    /* 이동하는 방향(+, -)과 속도(size)를 지정가능, size가 24px 이므로 안끊기게 하려면 배수로 하는게 좋다 */
+    background-position-x: 24px, -24px;
+  }
+}
+
+.home-events__row-item {
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
+  cursor: pointer;
+}
+
+.home-events__row-item span {
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+  display: block;
+  margin-top: 20px 0;
+}
+
+.home-events__row-item p {
+  font-size: 0.95rem;
+  letter-spacing: 0.05rem;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.home-events__row a {
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 30%);
+  padding: 20px 60px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
+
+.home-events__row a:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s ease;
+}
+
+.home-address {
+  width: 100%;
+  padding: 0 60px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 60px;
+  grid-template-rows: minmax(300px, 340px);
+}
+
+.home-address__text {
+  text-align: center;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(270deg, #000 50%, transparent 0),
+    linear-gradient(0deg, #000 50%, transparent 0);
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-size: 30px 1px, 1px 30px, 30px 1px, 1px 30px;
+  background-position: 0 0, 100% 0, 0 100%, 0 100%;
+  animation: rotateWalk 0.4s infinite normal;
+  animation-timing-function: linear;
+  /* animation을 멈춘 상태로 둔다! */
+  animation-play-state: paused;
+}
+
+.home-address__text:hover {
+  animation-play-state: running;
+}
+
+.home-address__text h3 {
+  font-size: 3.7rem;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+
+.home-address__map {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(270deg, #000 50%, transparent 0),
+    linear-gradient(0deg, #000 50%, transparent 0);
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-size: 30px 1px, 1px 30px, 30px 1px, 1px 30px;
+  background-position: 0 0, 100% 0, 0 100%, 0 100%;
+  animation: rotateWalk 0.4s infinite normal;
+  animation-timing-function: linear;
+  /* animation을 멈춘 상태로 둔다! */
+  animation-play-state: paused;
+}
+
+.home-address__map:hover {
+  animation-play-state: running;
+}
+
+.home-address__map img {
+  margin-left: 1px;
+  margin-top: 1px;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  object-fit: cover;
+}
+
+/* position-x와 달리 전부 가로 세로 전부 설정 */
+@keyframes rotateWalk {
+  0% {
+    background-position: 0 0, 100% 0, 0 100%, 0 100%;
+  }
+  100% {
+    background-position: 30px 0, 100% 30px, -30px 100%, 0 calc(100% - 30px);
+  }
+}
+
+.footer {
+  padding: 60px 60px 0 60px;
+}
+
+.footer-header {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: repeating-linear-gradient(
+      -74deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 1px,
+      transparent 0,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      -74deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 1px,
+      transparent 0,
+      transparent 4px
+    );
+  background-position: 0 0, 0 100%;
+  background-size: 100% 12px, 100% 12px;
+  /* 이 반복이 없으면 전체가 적용됨 */
+  background-repeat: repeat-x;
+}
+
+.footer-header h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.footer-header a {
+  padding: 1rem 2.5rem;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
+
+.footer-header a:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s ease;
+}
+
+.footer-link {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  text-align: center;
+}
+
+.footer-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-link__item {
+  padding: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(270deg, #000 50%, transparent 0),
+    linear-gradient(0deg, #000 50%, transparent 0);
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-size: 30px 1px, 1px 30px, 30px 1px, 1px 30px;
+  background-position: 0 0, 100% 0, 0 100%, 0 100%;
+  animation: rotateWalk 0.4s infinite normal;
+  animation-timing-function: linear;
+  /* animation을 멈춘 상태로 둔다! */
+  animation-play-state: paused;
+}
+
+.footer-link__item:hover {
+  animation-play-state: running;
+}
+
+.footer-link__item-icon {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+.icon1 {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/48-bubbles/48/15.Pencil-512.png");
+}
+
+.icon2 {
+  background-image: url("https://cdn1.iconfinder.com/data/icons/social-media-outline-6/128/SocialMedia_Facebook-Outline-512.png");
+}
+
+.icon3 {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/social-media-line-3/64/Social-media-expand_Instagram-512.png");
+}
+
+.footer-newsletter {
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(270deg, #000 50%, transparent 0),
+    linear-gradient(0deg, #000 50%, transparent 0);
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-size: 30px 1px, 1px 30px, 30px 1px, 1px 30px;
+  background-position: 0 0, 100% 0, 0 100%, 0 100%;
+  animation: rotateWalk 0.4s infinite normal;
+  animation-timing-function: linear;
+  /* animation을 멈춘 상태로 둔다! */
+  animation-play-state: paused;
+}
+
+.footer-newsletter:hover {
+  animation-play-state: running;
+}
+
+.footer-newsletter span {
+  font-size: 1.3rem;
+  font-family: "Space Mono", monospace;
+  letter-spacing: 0.05rem;
+  line-height: 1.8rem;
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  margin-right: 60px;
+}
+
+.footer-newsletter form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 680px;
+}
+
+.footer-newsletter form input {
+  width: 100%;
+  height: 100%;
+  padding: 22px 30px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.footer-newsletter form input::placeholder {
+  color: black;
+}
+
+.footer-newsletter form button {
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  z-index: 1;
+  background: none;
+  border: none;
+  font-size: 22px;
+}
+
+.footer-info {
+  padding: 20px 0 60px;
+  font-size: 0.8rem;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info a {
+  color: black;
+}
+
+.footer-info__left {
+  width: 100%;
+  max-width: 630px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info__right a {
+  text-decoration: none;
+}
+
+.footer-info__right a span {
+  text-decoration: line-through;
+}
