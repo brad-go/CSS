@@ -227,4 +227,4 @@ home-address__text:hover {
 }
 ```
 
-이렇게 해서 마우스를 올리면 점선들이 움직이는 animatino이 완성된다. 정말 대단하다. 이 사이트를 cloning 해보길 정말 잘한 것 같다. animation에 대해서 조금 더 확실히 알게 되었고, linear-gradient를 사용하는 새로운 방법을 알게 되었다!!
+이렇게 해서 마우스를 올리면 점선들이 움직이는 animation이 완성된다. 정말 대단하다. 이 사이트를 cloning 해보길 정말 잘한 것 같다. animation에 대해서 조금 더 확실히 알게 되었고, linear-gradient를 사용하는 새로운 방법을 알게 되었다!!

@@ -72,7 +72,6 @@ nav [class*="header-"] {
 
 .sticky-header {
   z-index: 2;
-  float: left;
 }
 
 /* 특정 nav를 숨기기 위해 */

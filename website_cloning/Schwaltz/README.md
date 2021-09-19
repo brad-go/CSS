@@ -46,7 +46,7 @@ let scroll = getCurrentScroll();
 window.addEventListener("scroll", handleButtonLocate);
 ```
 
-이벤트 리스터너작성하고 리스터의 타입과 이벤트 발생 시 작동할 함수를 작성해준다.
+이벤트 리스너를 작성하고 리스너의 타입과 이벤트 발생 시 작동할 함수를 작성해준다.
 
 ```
 function handleButtonLocate() {
