@@ -13,6 +13,7 @@ Create a website with CSS
 7. Gallery: "https://brad-go.github.io/CSS/CSS_Practice/07_Gallery/index.html"
 8. Leaflet: ""https://brad-go.github.io/CSS/CSS_Practice/08_Leaflet/index.html"
 9. OfficeDesign: "https://brad-go.github.io/CSS/CSS_Practice/09_OfficeDesign/index.html"
+10. PricingPanel: "https://brad-go.github.io/CSS/CSS_Practice/10_PricingPanel/index.html"
 
 ## [Website Cloning]
 
