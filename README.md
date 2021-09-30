@@ -31,4 +31,4 @@ Create a website with CSS
 
 ## [Bootstrab]
 
-1. MUSEUM OF CANDY: "https://brad-go.github.io/CSS/Bootstrap/MuseumOfCandy/index.html/
+1. MUSEUM OF CANDY: "https://brad-go.github.io/CSS/Bootstrap/MuseumOfCandy/index.html"
